@@ -1,12 +1,12 @@
 # Formula-1 score prediction using analytics and machine learning
 
-This project explores Formula 1 data analysis using Oracle Autonomous Data Warehouse (ADW) and Oracle Analytics Cloud (OAC). It delves into the factors that contribute to the race experience for fans using machine learning, leveraging historical race data from 1950 to 2021 and fan score data ranging from (2008 to 2020) from racefans.net. This project also aims to predict the fan score for 2021.
+This project represents a sophisticated exploration of Formula 1 data analysis, employing Oracle Autonomous Data Warehouse (ADW) in tandem with Oracle Analytics Cloud (OAC). It meticulously investigates the myriad factors shaping the race experience for enthusiasts through the lens of machine learning, leveraging an extensive dataset spanning from the inception of Formula 1 in 1950 to the contemporary era of 2021. Additionally, it integrates fan sentiment data sourced from racefans.net covering the period of 2008 to 2020. The primary objective of this endeavor is to accurately predict fan scores for the 2021 Formula 1 season.
 
 The tasks involve the following:
-- **Data Loading**: Setting up the ADW environment and loading Grand Prix data.
-- **Basic Exploration**: Identifying potential factors influencing fan appreciation, like weather, circuit, and overtakes, through data visualization.
-- **Advanced Exploration**: Uncovering hidden patterns by crafting features like "Come back score" and "RankVersusPosition".
-- **Machine Learning Training & Prediction**: Using AutoML to build a model predicting fan scores and evaluating its accuracy.
+- **Data Loading**: Establishment of a user schema within ADW, facilitating the ingestion and integration of diverse race-related datasets, including Races, Lap Times, Safety Car Incidents, Pit Stops, Race Results, and Driver Rankings.
+- **Basic Exploration**: Initial examination of race data to identify potential influencers of fan sentiment, such as weather conditions, circuit attributes, and frequency of overtaking maneuvers, facilitated by comprehensive data visualization techniques.
+- **Advanced Exploration**: Delve into nuanced insights by crafting bespoke features like "Comeback Score" and "RankVersusPosition," shedding light on hidden patterns and performance dynamics within race events.
+- **Machine Learning Training & Prediction**: Utilization of automated machine learning (AutoML) methodologies to construct predictive models aimed at forecasting fan scores, subsequently assessing the models' efficacy and accuracy.
 
 
 The first step is to set up a user schema that is essential for ingesting different types of race data such as (Races data, Lap Times data, Safety Car data, Pit Stop data, Race Results data, and Driver Ranking data), all of which are in .csv format and each file has 1000s of rows and columns containing all the related info regarding the race. This is also useful for ramping up the speed at which the data is processed.
