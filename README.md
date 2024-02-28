@@ -19,3 +19,9 @@ After analyzing the Races data, and finding which season has highest and lowest 
 ![Position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/912994fc-be0f-4ab0-83fc-10d2b18a2e8a)
 
 Here, we can see that a high scoring race has many more position changes than the low scoring race. This suggests that the number of take overs are an important factor that influence the race score.
+
+
+Now, digging into the position changes chart, we can see that drivers from last position will come to a higher position at a specific lap in the race. This is shown by the below image.
+
+
+![Top position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/c78ef6ae-dac4-40c5-a1f4-eebe8d516f14)
