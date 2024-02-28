@@ -45,3 +45,53 @@ To further verify this, I had utilized a scatter plot to check how fan scores ar
 And finally, weather plays a major role in an any F1 race as it might affect the traction of the cars on the road by making it slippery, and also, blinding the drivers visibility by 60%. To check this, I had to utilize a box plot where the median corresponds to the fan score.
 
 ![using box plot for weather changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/beb48966-b92b-4b06-b583-d6816e166d5e)
+
+
+**Advanced Data Exploration**
+
+Now that the basic factors are identified which was pretty much simple to identify and guess, it's time to analyze a bit more into the race season and gather further details that might have contributed to higher fan scores.
+
+Usually, when a driver strives hard and tries to overtkae other drivers who are on the front, such instances are termed as "come-backs", and it might be a good starting point to guess.
+
+![vettel-comeback](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/fca87dc2-edb6-46dc-9ec6-55ab46e47791)
+
+In this graph, the violet line (reference for "Sebastian Vettel"), is making his way from the 23rd position to the 5th position and back to 18th position and then finally staying in the 5th position. Overall, his position jumped from (23rd to 5th position), which signifies his large come-back statistics.
+
+
+During a race, it is imperative that a driver has to make a pit-stop to change his car's tyres because of wear and tear, or damage etc. Because of this, they might lose their existing position to someone who overtakes from behind. 
+
+In the below graph, we can see that many drivers getting overtaken (represented by circle dots), and making a pit stop (represented by square box).
+
+![drag-pit-stop](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/83a06199-7e37-4575-a53c-d80e6509e032)
+
+
+But the caviat here is that, there is huge difference in overtaken due to a pit-stop and overtaken on the actual race, which might affect the fan scores.
+
+![Pit stops](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/83cb5456-3f6a-4b0a-9957-c13dd20e400f)
+
+
+Finally, during a race, if some driver crashes, or has some issues with the car, they are unable to race at that point. Because of the obstruction or car debris on the track, all the ramining drivers are supposed to slow down wherever they are and are supposed to follow behind a special car (known as safety car) until the the debris is cleared. When this happens, all the remaining drivers will come very close to each other in terms of the actual distance which we can see from the below graph.
+
+![safety-car situation](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/43ceb69a-3257-434a-85f5-8d0c64796846)
+
+
+**Machine Learning Training & Prediction**
+
+After gathering all the data points that's affecting the fan score's, we're gonna test this by running an ML model on the Oracle's Analytics Cloud (OAC), which yields us a prediction graph.
+
+The first part is generating the new features using SQL, i.e,
+- Calculate the number of laps that have a change of driver in the leading position.
+- Calculate the number of laps that have a change of driver in the top 5 positions.
+- Calculate the total number of overtakes in two ways: semi-overtakes due to a pit stop and actual overtakes on the track.
+- Calculate the "come back score", defined as the maximum number of positions that a driver recovers from a position in the back of the field.
+- Retrieve the number of safety cars in a race.
+
+<img width="953" alt="generating nw features" src="https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/49f0ab0a-7686-4774-89be-b25f3da8243d">
+
+Running this, the RACES table will be added with the above mentioned features.
+
+Now is the testing phase, where I run 5 different models to fetch it's accuracy namely, (Generalized Linear Model, Generalized Linear Model Ridge Regression, Neural Network, Support Vector Machine Gaussian, Support Vector Machine Linear)
+
+![Traning using Auto ML](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/b43a1ce6-23e5-44bb-b5bc-b5efaa718555)
+
+
