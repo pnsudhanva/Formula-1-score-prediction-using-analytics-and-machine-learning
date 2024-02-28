@@ -36,3 +36,7 @@ Furthermore, it is imperative that certain drivers facing engine failures, or cr
 ![dnfs](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/3ac666c2-42ec-4131-817a-02e786fe8bb4)
 
 
+To further verify this, I had utilized a scatter plot to check how fan scores are affected by overtaken positions.
+
+
+![scatter plot for position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/1cfcc206-216a-45ad-ad71-09ecc11f8292)
