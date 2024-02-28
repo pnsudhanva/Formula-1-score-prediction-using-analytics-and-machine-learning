@@ -94,4 +94,25 @@ Now is the testing phase, where I run 5 different models to fetch it's accuracy 
 
 ![Traning using Auto ML](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/b43a1ce6-23e5-44bb-b5bc-b5efaa718555)
 
+Since we had only fan scores from 2008 to 2020 and historical race data from 1960 to 2021, now, the task lies in predicting the accuracy of the fanscores for the 2020 season by training the model with the previous data through data flow.
+
+![Predicted scores](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/bee01a01-2368-4f16-9b55-f3358834496b)
+
+Here, we can see that the orange line representing the predicted score and the blue line representing the actual score. Which highlightes a great level of accuracy.
+
+Just on a side note, if I want to check the difference between the two, I can add an additional column below the graph to represent the difference which we can see below.
+
+![difference between actual and predicted scores](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/d19cb29b-a42e-4372-ae27-438e34338247)
+
+Finally, my job is to predict the scores for the 2021 season, because I only had fan scores from 2008 to 2020. This is just to prove my prediction for the future fan scores for the 2021 season. 
+
+![Predicting future scores based on past data](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/4eba3ad1-d0f5-48cd-b140-be8a038f9437)
+
+
+The results seem to be almost similar, except for the final race at Abu Dhabi where there was a huge drama/rule change in the end leading to Max Verstappen overtaking Lewis Hamilton in the race, ultimately leading to him winning the championship. :'))
+
+**Future Improvements**
+- the actual distnace between the drivers, if they are close to each other, that might influence the fan scores
+- Weather: only considering the races which is not cancelled due to bad weather
+- takeover situation on the top-most positions
 
