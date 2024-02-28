@@ -16,7 +16,8 @@ The first step is to set up a user-schema that is essential for ingesting differ
 **Basic Data exploration:**
 After analyzing the Races data, and finding which season has highest and lowest scores respectively, now it is important to visualize the data by position, laps, and driver_ID.
 
-![Position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/912994fc-be0f-4ab0-83fc-10d2b18a2e8a)
+![Position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/f68a5005-6024-4599-b1b9-c91b6806ae9a)
+
 
 Here, we can see that a high scoring race has many more position changes than the low scoring race. This suggests that the number of take overs are an important factor that influence the race score.
 
@@ -25,3 +26,13 @@ Now, digging into the position changes chart, we can see that drivers from last 
 
 
 ![Top position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/c78ef6ae-dac4-40c5-a1f4-eebe8d516f14)
+
+
+I can conclude that the Brazilian GP doesn't only have more take overs in general, it also has more take overs in the leading positions, especially in the top positions- are an important factor that influence the score that fans give to a race.
+
+
+Furthermore, it is imperative that certain drivers facing engine failures, or crashes in the middle of the race, counted as DNFs (did not finish). By viewing closely, we can see that certain drivers like Lewis Hamilton failed to complete the race at the 55th lap, and there are many more.
+
+![dnfs](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/3ac666c2-42ec-4131-817a-02e786fe8bb4)
+
+
