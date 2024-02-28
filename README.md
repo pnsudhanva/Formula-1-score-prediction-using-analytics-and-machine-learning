@@ -11,3 +11,7 @@ The tasks involve the following:
 
 The first step is to set up a user-schema that is essential for ingesting different types of race data such as (Races data, Lap Times data, Safety Car data, Pit Stop data, Race Results data, and Driver Ranking data), all of which are in .csv format and each file has 1000s of rows and columns containing all the related info regarding the race. This is also useful for ramping up the speed at which the data is processed.
 
+Basic Data exploration:
+After analyzing the Races data, and finding which season has highest and lowest scores respectively, now it is important to visualize the data by position, laps, and driver_ID.
+
+![Position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/912994fc-be0f-4ab0-83fc-10d2b18a2e8a)
