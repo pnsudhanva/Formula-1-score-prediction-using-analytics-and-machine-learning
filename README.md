@@ -7,3 +7,7 @@ The tasks involve the following:
 - **Basic Exploration**: Identifying potential factors influencing fan appreciation, like weather, circuit, and overtakes, through data visualization.
 - **Advanced Exploration**: Uncovering hidden patterns by crafting features like "Come back score" and "RankVersusPosition".
 - **Machine Learning Training & Prediction**: Using AutoML to build a model predicting fan scores and evaluating its accuracy.
+
+
+The first step is to set up a user-schema that is essential for ingesting different types of race data such as (Races data, Lap Times data, Safety Car data, Pit Stop data, Race Results data, and Driver Ranking data), all of which are in .csv format and each file has 1000s of rows and columns containing all the related info regarding the race. This is also useful for ramping up the speed at which the data is processed.
+
