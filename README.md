@@ -40,3 +40,8 @@ To further verify this, I had utilized a scatter plot to check how fan scores ar
 
 
 ![scatter plot for position changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/1cfcc206-216a-45ad-ad71-09ecc11f8292)
+
+
+And finally, weather plays a major role in an any F1 race as it might affect the traction of the cars on the road by making it slippery, and also, blinding the drivers visibility by 60%. To check this, I had to utilize a box plot where the median corresponds to the fan score.
+
+![using box plot for weather changes](https://github.com/pnsudhanva/Formula-1-score-prediction-using-analytics-and-machine-learning/assets/14261453/beb48966-b92b-4b06-b583-d6816e166d5e)
